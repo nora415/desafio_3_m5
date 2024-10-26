@@ -1,0 +1,7 @@
+<h2> BB.DD DocumentaryFilm </h2>
+
+<% @DocumentaryFilm.each do |p| %>
+<h2> DocumentaryFilm:<%= p.name %></h2>
+<h3>  Synopsis <%= p.synopsis %></h3>
+<h3> Director: <%= p.director%></h3>
+<% end%>

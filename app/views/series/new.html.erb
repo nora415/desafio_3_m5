@@ -1,0 +1,58 @@
+<br>
+<br>
+<div class="container-fluid">
+<h1>Bienvenido a Streaming Serie</h1>
+<p>Rails Video es un servicio de streaming OTT de películas y series creado y gestionado por Amazon. Se ofrece tanto como un servicio independiente o como parte de la suscripción an Amazon Prime.</p>
+
+<h2> Ingresa tu Serie Favorita </h2>
+
+<%= form_with model: @Serie, method: :post do |form| %>
+ <div>
+ <%= form.label :name, "Serie Title" %>
+ <%= form.text_field :name %>
+ </div>
+  <br>
+ <div>
+ <%= form.label :synopsis, "Serie Synopsis" %>
+ <%= form.text_field :synopsis %>
+ </div>
+  <br>
+<div>
+ <%= form.label :director, "Serie Director" %>
+ <%= form.text_field :director %>
+ </div>
+  <br>
+ <div>
+ <%= form.submit "crear"%>
+ </div>
+  <br>
+<% end %>
+<br>
+<br>
+<br>
+<div class="card-group">
+  <div class="card">
+    <img src="https://i.ytimg.com/vi/I-M1a4qsPF4/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAKawQCUB_8c6AAzVUfnEh9POYsVA" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Vencer o Morir</h5>
+      <p class="card-text">Bajo el régimen de Augusto Pinochet en Chile, un grupo de jóvenes declara la guerra al dictador. Sus líderes son los comandantes Tamara y Rodrigo. Ambos dejan atrás sus vidas y familias para luchar contra la dictadura, juntos quieren cambiar Chile y su historia.</p>
+      <p class="card-text"><small class="text-body-secondary">Rodrigo Sepúlveda, Gabriel Díaz, Erneto Díaz</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="https://i.ytimg.com/vi/R6r6uxZRc_w/mqdefault.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Betty la fea</h5>
+      <p class="card-text">Beatriz Pinzón Solano es una brillante economista con maestría en finanzas; solo tiene un defecto: es fea. Todo cambia cuando comienza a trabajar en Ecomoda, una de las empresas más grandes del país, donde conoce y se enamora de Armando Mendoza. Esta vez la vida le dará una segunda oportunidad para demostrar que puede convertirse en la mujer más deseada y amada del mundo.</p>
+      <p class="card-text"><small class="text-body-secondary">Mario Ribero</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSntMzOL7DpUccl9rkjey2DOJny_YgAHnTZmg&s" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Los 80</h5>
+      <p class="card-text">La familia Herrera invierte en su primer TV a color y debido a su situacion economica, tienen que pagar a credito y endeudarse. Por causa de la crisis economica, el jefe de hogar queda cesante, llenando de desafios al grupo familiar.</p>
+      <p class="card-text"><small class="text-body-secondary">Boris Quercia, Rodrigo Bazaes</small></p>
+    </div>
+  </div>
+</div>

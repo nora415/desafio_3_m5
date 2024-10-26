@@ -1,0 +1,67 @@
+<br>
+<br>
+<div class="container-fluid">
+<h1>Bienvenido a Rails Video</h1>
+<h5>Disfruta de títulos Amazon Original exclusivos, además de películas y series populares, por CLP 5,790/mes. Disfruta ahora, cancela en cualquier momento.</h5>
+<br>
+<br>
+<br>
+<h1> Bienvenido a Streaming Pelicula</h1>
+<p>Rails Video es un servicio de streaming OTT de películas y series creado y gestionado por Amazon. Se ofrece tanto como un servicio independiente o como parte de la suscripción an Amazon Prime.</p>
+
+<h2> Ingresa tu Pelicula Favorita </h2>
+<%= form_with model: @movie, method: :post do |form| %>
+ <div>
+ <br>
+ <br>
+ <%= form.label :name, "Título" %>
+ <%= form.text_field :name %>
+ </div>
+ <br>
+ <div>
+ <%= form.label :synopsis, "Synopsis" %>
+ <%= form.text_field :synopsis %>
+ </div>
+ <br>
+<div>
+ <%= form.label :director, "Director" %>
+ <%= form.text_field :director %>
+ </div>
+ <br>
+ <div>
+ <%= form.submit "crear" %>
+ </div>
+  </div>
+<% end %>
+<br>
+<br>
+<br>
+<div class="card-group">
+  <div class="card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCrde1i57e8vM4LIyKDYqKOgQFd0m3pMv2OA&s" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Chucky: el muñeco diabolico</h5>
+      <p class="card-text">Solo el joven Andy se da cuenta de que a su muñeco Chucky lo habita el alma de un asesino y es responsable de una serie de asesinatos horripilantes. Pero el verdadero terror comienza cuando Chucky decide transferir su espíritu maligno a un ser humano... ¡Andy!</p>
+      <p class="card-text"><small class="text-body-secondary">Dirección Tom Holland</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="https://hacerselacritica.com/wp-content/uploads/2013/08/The-Conjuring-2013-Movie.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">El Conjuro</h5>
+      <p class="card-text">Obligados a enfrentarse a una poderosa entidad demoníaca, los Warren se encuentran atrapados en el caso más terrible de sus vidas.</p>
+      <p class="card-text"><small class="text-body-secondary">Dirección James Wan</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="https://occ-0-8407-2219.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABX3tC7HMqzuDttt4J3W0Q5qbvypl1OSwe0xVXjQj8dvY7RGD7E711_js3E9xTikpGa-2OgByvS21IcGoIMm_xaBIkp9ogKDJ2j2F.jpg?r=ac9" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">La Noche Del Demonio: Capítulo 2</h5>
+      <p class="card-text">¿Qué tan profundo en la oscuridad llegarías por descubrir la verdad? La aterradora secuela de La noche del demonio sigue a la atormentada familia Lambert conforme buscan descubrir el misterioso secreto de la niñez que los ha mantenido peligrosamente conectados con el mundo de los espíritus. Ellos deben buscar la ayuda de aliados conocidos para exorcizar a los demonios que los persiguen y desenterr</p>
+      <p class="card-text"><small class="text-body-secondary">Dirección James Wan</small></p>
+    </div>
+  </div>
+</div>
+
+
+

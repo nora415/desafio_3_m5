@@ -1,0 +1,60 @@
+<br>
+<br>
+<div class="container-fluid">
+<h1>Bienvenido a Streaming  documental</h1>
+<p>Rails Video es un servicio de streaming OTT de películas y series creado y gestionado por Amazon. Se ofrece tanto como un servicio independiente o como parte de la suscripción an Amazon Prime.</p>
+
+<h2> Ingresa tu documental </h2>
+
+<%= form_with model: @DocumentaryFilm, method: :post do |form| %>
+ <div>
+ <br>
+ <br>
+ <%= form.label :name, "Título" %>
+ <%= form.text_field :name %>
+ </div>
+ <br>
+ <div>
+ <%= form.label :synopsis, "Synopsis" %>
+ <%= form.text_field :synopsis %>
+ </div>
+ <br>
+<div>
+ <%= form.label :director, "Director" %>
+ <%= form.text_field :director %>
+ </div>
+ <br>
+ <div>
+ <%= form.submit "crear"%>
+ </div>
+ <br>
+<% end %>
+<br>
+<br>
+<br>
+<div class="card-group">
+  <div class="card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLPn5L0EzqGya-y_ZYM2jqJUdACYWjLAzgZw&s" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">El Mundo Secreto de las Plantas</h5>
+      <p class="card-text">El mundo secreto de las plantas nos acerca a estos seres inmóviles y silenciosos, tan atractivos y sorprendentes como el resto de los seres vivos. El documental desvela los aspectos más desconocidos del reino vegetal.</p>
+      <p class="card-text"><small class="text-body-secondary">Fernando L. Rodríguez</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6JMUmB-wbS8iQjO284zIfBwMY0KGFqIXWtA&s" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Extraterrestres entre Nosotros</h5>
+      <p class="card-text">Basándose en los asombrosos relatos de personas de todo el mundo, este documental explora el fenómeno de la presencia no humana en la Tierra, desde ángeles a extraterrestres, y revela las muchas maneras en que pueden estar interactuando, comunicándose y transfiriendo información subliminal a nuestra conciencia y potencialmente a nuestro ADN.</p>
+      <p class="card-text"><small class="text-body-secondary">Caroline Cory</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSItUpspzoiRhPW2lBvC2_p4LkxjMF0pJIPiw&s" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Archivo negro: Sombras del crimen</h5>
+      <p class="card-text">Cuando las víctimas de un feminicida serial comienzan a aparecer en los límites con el Estado de México, 'La Jefa' y su equipo especial de policías encabezan un operativo poco ortodoxo para atrapar a un chofer conocido como 'El Coqueto'.</p>
+      <p class="card-text"><small class="text-body-secondary">Emiliano Altuna, Paulina Del Paso, Diego Moreno Garza, Liora Spilk Bialostozky, José Villalobos</small></p>
+    </div>
+  </div>
+</div>
